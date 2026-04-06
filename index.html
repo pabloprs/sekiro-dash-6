@@ -419,11 +419,6 @@ ctx.globalAlpha = 1;
     const ew = weapons[activeStageData.weapon];
     if(Math.abs(p.x - e.x) < ew.range) p.hp -= 18; // dégâts augmentés
 }
-          if(isDashing) {
-    p.invincible = true;
-} else {
-    p.invincible = false;
-}
 
         document.getElementById('p-hp').style.width = p.hp + '%';
         document.getElementById('e-hp').style.width = (e.hp / activeStageData.hp * 100) + '%';
